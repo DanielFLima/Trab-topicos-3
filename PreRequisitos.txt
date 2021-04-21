@@ -1,0 +1,63 @@
+1-Requisitos
+        1.1- NodeJS - pode usar alguma framework para auxiliar, como o AdonisJS
+		1.2- Conectar um banco de dados da sua escolha (MySQL, PostgreSQL, MongoDB, Google Firebase, etc)
+		1.3- Ter uma tela simples para consumo dos dados
+2-Desenvolvimento
+    2.1- Permissão de acesso
+            Para efetuar login no sistema (a escolha é sua de como será as credenciais)
+	2.2- Gerenciamento de transações (Adicionar, Editar e Remover
+            Alimentação: gerir os produtos do cardápio
+                /adicionarProduto
+                /editarProduto
+                /removerProduto
+	2.3- Ofertar rotas de relatórios ou listagem
+            Alimentação: listar todos os produtos em ordem de preço
+                Listar todos os produtos em promoção
+                Listar os produtos por categorias
+                Listar os produtos mais vendidos
+3-Funcionalidade Extra
+       Alimentação: realização de pedido, gestão de promoções, gestão de categorias, etc
+
+/produto
+    /adicionarProduto
+    /editarProduto
+    /removerProduto
+    /listarProduto
+        /categoria
+        /produtoPromocao
+            /adicionarPromocao
+            /removerPromocao
+            /editarPromocao 
+/relatorio
+    /faturamentoMensal
+    /faturamentoSemanal
+    /faturamentoAnual
+    /faturamentoPeriodo/:data/:data
+/fornecedor
+    /listaFornecedor
+    /adicionarFornecedor
+    /editarFornecedor
+    /removerFornecedor
+/funcionario
+    /listarFuncionario
+    /adicionarFuncionario
+    /editarFuncionario
+/pedido
+    /listarPedido
+    /adicionarPedido
+    /editarPedido
+    /removerPedido
+/cadastrarUsuario
+/login
+
+Base banco de dados
+    User/Admin
+        id Nome Senha Email Admin
+    Produto
+        id Nome Categoria Quantidade Preco Validade Promocao PromocaoPorcent // 
+    Funcionario
+        id Nome Senha Admin DataNascimento Tel Endereço Email Setor Salário Ativo
+    Fornecedor
+        id Nome NomeEmpresa Tel Email Categoria 
+    Pedidos
+        id NomeCliente TelCliente NomeProduto QtdProduto SubTotal Total Desconto FormaPagamento Delivery 
